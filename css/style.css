@@ -6286,7 +6286,8 @@ body {
       background: #fff;
       z-index: 999;
       position: fixed; }
-    body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
+    body.offcanvas #colorlib-main,
+    body.offcanvas .colorlib-nav-toggle {
       top: 0;
       -moz-transform: translateX(270px);
       -webkit-transform: translateX(270px);
@@ -6295,15 +6296,23 @@ body {
       transform: translateX(270px); }
 
 a {
-  transition: .3s all ease;
+  transition: 0.3s all ease;
   color: #ccb78f; }
   a:hover, a:focus {
     text-decoration: none;
     color: #ccb78f;
     outline: none !important; }
 
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   line-height: 1.5;
   color: black;
   font-weight: 400; }
@@ -6345,7 +6354,7 @@ h1, h2, h3, h4, h5,
       padding-top: 2em;
       background: rgba(0, 0, 0, 0.04); } }
   #colorlib-aside #colorlib-logo {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     display: block;
     width: 100%;
     font-weight: 700;
@@ -6498,7 +6507,7 @@ h1, h2, h3, h4, h5,
           /* Firefox 18- */
           color: rgba(0, 0, 0, 0.4) !important; }
       #colorlib-aside .colorlib-footer .colorlib-subscribe-form .form-group .form-control {
-        bordeR: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         font-weight: 400; }
     #colorlib-aside .colorlib-footer .colorlib-subscribe-form .icon {
       position: absolute;
@@ -6515,6 +6524,8 @@ h1, h2, h3, h4, h5,
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease; }
+  #colorlib-main p.intro {
+    font-size: 2vw; }
 
 .colorlib-nav-toggle {
   cursor: pointer;
@@ -6532,13 +6543,13 @@ h1, h2, h3, h4, h5,
     width: 30px;
     height: 2px;
     color: #000000;
-    font: bold 14px/.4 Helvetica;
+    font: bold 14px/0.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
     background: #000000;
-    transition: all .2s ease-out; }
+    transition: all 0.2s ease-out; }
     .colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after {
-      content: '';
+      content: "";
       width: 30px;
       height: 2px;
       background: #000000;
@@ -6553,7 +6564,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     color: #000000;
     background: #000000;
-    transition: all .2s ease-out; }
+    transition: all 0.2s ease-out; }
     .colorlib-nav-toggle.dark i::before, .colorlib-nav-toggle.dark i::after {
       background: #000000;
       -moz-transition: all 0.2s ease;
@@ -6613,12 +6624,15 @@ h1, h2, h3, h4, h5,
       visibility: visible; } }
 
 .ftco-intro h1 {
-  font-size: 9.3vw;
+  font-size: 12vh;
   font-weight: 700;
   line-height: 1;
   display: block; }
   .ftco-intro h1.final {
     font-size: 5.3vw; }
+    .ftco-intro h1.final .title-animated {
+      animation-name: font-color-animation;
+      animation-duration: 2s; }
 
 @media (max-width: 767.98px) {
   .ftco-intro {
@@ -6629,10 +6643,12 @@ h1, h2, h3, h4, h5,
   height: 100%;
   position: relative;
   z-index: 0; }
-  .hero-wrap .author-info, .hero-wrap .author-image {
+  .hero-wrap .author-info,
+  .hero-wrap .author-image {
     width: 50%; }
     @media (max-width: 767.98px) {
-      .hero-wrap .author-info, .hero-wrap .author-image {
+      .hero-wrap .author-info,
+      .hero-wrap .author-image {
         width: 30%; } }
   .hero-wrap .author-info {
     overflow-y: scroll; }
@@ -6686,7 +6702,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .4;
+    opacity: 0.4;
     background: #000000; }
   @media (min-width: 992px) {
     .video-hero .text {
@@ -6734,7 +6750,7 @@ h1, h2, h3, h4, h5,
       letter-spacing: 2px;
       color: rgba(255, 255, 255, 0.8); }
   .photography-entry:hover .overlay, .photography-entry:focus .overlay {
-    opacity: .7; }
+    opacity: 0.7; }
   .photography-entry:hover .text, .photography-entry:focus .text {
     opacity: 1; }
 
@@ -6811,7 +6827,7 @@ h1, h2, h3, h4, h5,
       height: 4px;
       width: 100%;
       background: #000000;
-      content: ''; }
+      content: ""; }
 
 .services {
   width: 100%;
@@ -6838,12 +6854,16 @@ h1, h2, h3, h4, h5,
     .services .icon span {
       font-size: 54px;
       color: #000000; }
+      .not-available .services .icon span {
+        color: #7d7d7d; }
   .services .media-body h3 {
     font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
     line-height: 1.2;
     margin-bottom: 20px; }
+    .not-available .services .media-body h3 {
+      color: #979696; }
 
 #section-counter {
   position: relative;
@@ -6854,7 +6874,7 @@ h1, h2, h3, h4, h5,
     left: 0;
     bottom: 0;
     right: 0;
-    content: '';
+    content: "";
     z-index: -1;
     opacity: 0;
     background: #242423; }
@@ -6949,7 +6969,7 @@ h1, h2, h3, h4, h5,
     top: 0;
     right: 100%;
     bottom: 0;
-    content: '';
+    content: "";
     width: 360%;
     background: #dcceb2; }
   @media (max-width: 767.98px) {
@@ -6986,7 +7006,7 @@ textarea.form-control {
   font-size: 20px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 3vh 0;
   position: relative; }
   @media (max-width: 991.98px) {
     .ftco-section {
@@ -6994,9 +7014,6 @@ textarea.form-control {
 
 .ftco-no-padding {
   padding: 0; }
-
-.ftco-extend-mb {
-  margin-bottom: 4em; }
 
 .ftco-no-pt {
   padding-top: 0; }
@@ -7007,13 +7024,16 @@ textarea.form-control {
 .ftco-section-3 {
   padding: 1.8em; }
 
+.not-available {
+  color: #b0b0b0; }
+
 .ftco-footer {
   font-size: 14px;
   background: #242423;
   padding: 6em 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
-    letter-spacing: .1em; }
+    letter-spacing: 0.1em; }
   .ftco-footer .ftco-footer-widget h2 {
     color: #fff;
     margin-bottom: 40px;
@@ -7188,13 +7208,15 @@ textarea.form-control {
 
 .block-23 ul {
   padding: 0; }
-  .block-23 ul li, .block-23 ul li > a {
+  .block-23 ul li,
+  .block-23 ul li > a {
     display: table;
     line-height: 1.5;
     margin-bottom: 15px; }
   .block-23 ul li span {
     color: rgba(255, 255, 255, 0.5); }
-  .block-23 ul li .icon, .block-23 ul li .text {
+  .block-23 ul li .icon,
+  .block-23 ul li .text {
     display: table-cell;
     vertical-align: top; }
   .block-23 ul li .icon {
@@ -7210,7 +7232,8 @@ textarea.form-control {
     display: inline-block;
     margin-bottom: 4px;
     font-weight: 400; }
-    .block-27 ul li a, .block-27 ul li span {
+    .block-27 ul li a,
+    .block-27 ul li span {
       border: 1px solid #000000;
       text-align: center;
       display: inline-block;
@@ -7219,7 +7242,8 @@ textarea.form-control {
       line-height: 40px;
       border-radius: 50%;
       color: #000000; }
-    .block-27 ul li.active a, .block-27 ul li.active span {
+    .block-27 ul li.active a,
+    .block-27 ul li.active span {
       background: #000000;
       color: #fff;
       border: 1px solid transparent; }
@@ -7307,7 +7331,7 @@ textarea.form-control {
       .comment-list li .comment-body .meta {
         text-transform: uppercase;
         font-size: 13px;
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
         color: #000000;
         margin-bottom: 20px; }
       .comment-list li .comment-body .reply {
@@ -7316,7 +7340,7 @@ textarea.form-control {
         color: #000000;
         text-transform: uppercase;
         font-size: 11px;
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
         font-weight: 400;
         border-radius: 4px; }
         .comment-list li .comment-body .reply:hover {
@@ -7356,8 +7380,8 @@ textarea.form-control {
       left: 0;
       right: 0;
       bottom: 0;
-      content: '';
-      opacity: .3;
+      content: "";
+      opacity: 0.3;
       background: #000000;
       z-index: -1; }
   @media (max-width: 767.98px) {
@@ -7395,7 +7419,7 @@ textarea.form-control {
       /* Firefox 18- */
       color: rgba(255, 255, 255, 0.7) !important; }
   .subscribe-form .form-group .form-control {
-    bordeR: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     font-weight: 500; }
   .subscribe-form .form-group .submit {
     color: #000000 !important;
@@ -7431,26 +7455,32 @@ textarea.form-control {
     .sidebar-box {
       padding: 0; } }
 
-.categories, .sidelink {
+.categories,
+.sidelink {
   padding: 0; }
-  .categories li, .sidelink li {
+  .categories li,
+  .sidelink li {
     position: relative;
     margin-bottom: 10px;
     padding-bottom: 10px;
     list-style: none; }
-    .categories li:last-child, .sidelink li:last-child {
+    .categories li:last-child,
+    .sidelink li:last-child {
       margin-bottom: 0;
       border-bottom: none;
       padding-bottom: 0; }
-    .categories li a, .sidelink li a {
+    .categories li a,
+    .sidelink li a {
       display: block;
       color: #000000; }
-      .categories li a span, .sidelink li a span {
+      .categories li a span,
+      .sidelink li a span {
         position: absolute;
         right: 0;
         top: 0;
         color: #000000; }
-    .categories li.active a, .sidelink li.active a {
+    .categories li.active a,
+    .sidelink li.active a {
       color: #000000;
       font-style: italic; }
 
@@ -7466,7 +7496,7 @@ textarea.form-control {
   border-radius: 16px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
   z-index: 1000; }
 
 #ftco-loader.fullscreen {
@@ -7481,7 +7511,7 @@ textarea.form-control {
   box-shadow: none; }
 
 #ftco-loader.show {
-  transition: opacity .4s ease-out, visibility 0s linear 0s;
+  transition: opacity 0.4s ease-out, visibility 0s linear 0s;
   visibility: visible;
   opacity: 1; }
 
@@ -7529,7 +7559,7 @@ textarea.form-control {
   position: relative;
   width: 1.1em;
   font-size: 15vw;
-  color: #FFD700;
+  color: #ffd700;
   cursor: pointer; }
 
 /* sets filled star pseudo-elements */
@@ -7550,3 +7580,9 @@ textarea.form-control {
 /*when an element is selected and pointer re-enters the rating container, selected rate and siblings get semi transparent, as reminder of current selection*/
 .rating:hover > a > input:checked ~ .rating > a > label:before {
   opacity: 0.4; }
+
+@keyframes font-color-animation {
+  from {
+    color: white; }
+  to {
+    color: black; } }
