@@ -313,6 +313,10 @@ h5,
 	p.intro {
 		font-size: 2vw;
 	}
+
+	p.intro--small {
+		font-size: 1vw;
+	}
 }
 
 // Burger Menu
@@ -425,12 +429,12 @@ h5,
 
 .ftco-intro {
 	h1 {
-		font-size: 12vh;
+		font-size: 8vh;
 		font-weight: 700;
 		line-height: 1;
 		display: block;
 		&.final {
-			font-size: 5.3vw;
+			font-size: 4vw;
 			& .title-animated {
 				animation-name: font-color-animation;
 				animation-duration: 2s;
@@ -919,10 +923,10 @@ h5,
 		font-weight: 600;
 		color: $black;
 		margin-bottom: 0;
-		font-size: 5vw;
+		font-size: 3vw;
 		display: inline-block;
 		position: relative;
-		line-height: 1;
+		line-height: 2;
 		&:after {
 			position: absolute;
 			bottom: 0;
@@ -968,6 +972,10 @@ h5,
 			.not-available & {
 				color: #979696;
 			}
+		}
+
+		p {
+			font-size: 1.3vw;
 		}
 	}
 }
@@ -1875,7 +1883,7 @@ textarea.form-control {
 .rating > a > label {
 	position: relative;
 	width: 1.1em;
-	font-size: 15vw;
+	font-size: 12vw;
 	color: #ffd700;
 	cursor: pointer;
 }

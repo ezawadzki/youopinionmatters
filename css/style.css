@@ -6526,6 +6526,8 @@ h5,
   transition: all 0.5s ease; }
   #colorlib-main p.intro {
     font-size: 2vw; }
+  #colorlib-main p.intro--small {
+    font-size: 1vw; }
 
 .colorlib-nav-toggle {
   cursor: pointer;
@@ -6624,12 +6626,12 @@ h5,
       visibility: visible; } }
 
 .ftco-intro h1 {
-  font-size: 12vh;
+  font-size: 8vh;
   font-weight: 700;
   line-height: 1;
   display: block; }
   .ftco-intro h1.final {
-    font-size: 5.3vw; }
+    font-size: 4vw; }
     .ftco-intro h1.final .title-animated {
       animation-name: font-color-animation;
       animation-duration: 2s; }
@@ -6815,10 +6817,10 @@ h5,
     font-weight: 600;
     color: #000000;
     margin-bottom: 0;
-    font-size: 5vw;
+    font-size: 3vw;
     display: inline-block;
     position: relative;
-    line-height: 1; }
+    line-height: 2; }
     .ftco-bread .bread:after {
       position: absolute;
       bottom: 0;
@@ -6864,6 +6866,8 @@ h5,
     margin-bottom: 20px; }
     .not-available .services .media-body h3 {
       color: #979696; }
+  .services .media-body p {
+    font-size: 1.3vw; }
 
 #section-counter {
   position: relative;
@@ -7558,7 +7562,7 @@ textarea.form-control {
 .rating > a > label {
   position: relative;
   width: 1.1em;
-  font-size: 15vw;
+  font-size: 12vw;
   color: #ffd700;
   cursor: pointer; }
 
